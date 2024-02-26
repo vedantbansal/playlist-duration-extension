@@ -1,4 +1,4 @@
-let baseURL = "http://localhost:8000";
+let baseURL = "http://localhost:8000/";
 
 document.getElementById("urlForm").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -14,7 +14,7 @@ async function displayDuration(playlistURL){
       durationDisplay.textContent = "Couldn't find a playlist.";
       return;
     }
-    const duration = await fetch(`${baseURL}/find-duration?playlistId=${playlistId[1]}`)
+    const duration = await fetch(`${baseURL}find-duration?playlistId=${playlistId[1]}`)
     const response = await duration.json();
     durationDisplay.textContent = response["hours"] + " hours " + response["minutes"] + " minutes " + response["seconds"] + " seconds";
 }
