@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Playlist Duration Calculator",
+    "version": "1.0.0",
+    "description": "Extension to calculate the entire duration of a playlist",
+    "author": "Vedant Bansal",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Youtube Playlist Duration"
+    }
+}

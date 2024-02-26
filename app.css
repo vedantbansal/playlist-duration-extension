@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    background-color: #121212;
+    width: 300px;
+}
+
+#urlForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#playlistURL {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+#urlForm button {
+    background-color: #FFFFFF14;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#durationDisplay {
+    margin-top: 20px;
+}
