@@ -99,8 +99,8 @@ class yt_service_impl:
                 #sum of videos
                 self.total_seconds += int(video_secs)
             
-            duration = self.parse_seconds()
-            return {"hours": duration[0], "minutes":duration[1], "seconds": duration[2]}
+        duration = self.parse_seconds()
+        return {"hours": duration[0], "minutes":duration[1], "seconds": duration[2]}
 
     def parse_seconds(self):
         minutes, seconds = divmod(self.total_seconds, 60)
